@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .link {
+    @apply font-medium text-blue-900 underline;
+  }
+}
+
+@layer components {
+  .link {
+    @apply font-medium text-blue-900 underline;
+  }
+}
+
+@layer utilities {
+  .link {
+    @apply font-medium text-blue-900 underline;
+  }
+}
