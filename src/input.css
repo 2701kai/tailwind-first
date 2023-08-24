@@ -9,7 +9,7 @@
 }
 
 @layer components {
-  .link {
+  #navbar {
     @apply font-medium text-blue-900 underline;
   }
 }
@@ -17,5 +17,8 @@
 @layer utilities {
   .link {
     @apply font-medium text-blue-900 underline;
+  }
+  bg-full-viewport {
+    @apply h-screen w-screen bg-[./assets/gackground1.png] bg-cover bg-no-repeat bg-center;
   }
 }
