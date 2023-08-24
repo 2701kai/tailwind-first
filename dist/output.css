@@ -645,12 +645,12 @@ video {
      object-fit: cover;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -716,13 +716,17 @@ video {
   text-decoration-line: underline;
 }
 
-bg-full-viewport {
-  height: 100vh;
-  width: 100vw;
-  background-color: ./assets/gackground1.png;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.i {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.icon img {
+  height: 3rem;
+  width: 3rem;
+  /* This ensures that all images within .icon are of the same size */
 }
 
 .hover\:underline:hover {
