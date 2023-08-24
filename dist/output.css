@@ -434,13 +434,6 @@ video {
   display: none;
 }
 
-.link {
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -541,13 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-#navbar {
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgb(30 58 138 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -589,22 +575,12 @@ video {
   max-width: 28rem;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
 
 .justify-between {
   justify-content: space-between;
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -643,10 +619,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .p-8 {
@@ -709,6 +681,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.ubuntu-navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.ubuntu-navbar > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.ubuntu-navbar {
+  padding: 1rem;
+}
+
 .link {
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -728,6 +715,27 @@ video {
   width: 3rem;
   /* This ensures that all images within .icon are of the same size */
 }
+
+/* Classes for the image in the <main> tag */
+
+.kai {
+  position: absolute;
+  bottom: 6rem;
+  left: -50px;
+  z-index: 10;
+}
+
+/* @layer base {
+  .link {
+    @apply font-medium text-blue-900 underline;
+  }
+}
+
+@layer components {
+  #navbar {
+    @apply font-medium text-blue-900 underline;
+  }
+} */
 
 .hover\:underline:hover {
   text-decoration-line: underline;
