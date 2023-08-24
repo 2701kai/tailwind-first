@@ -25,10 +25,10 @@
     @apply font-medium text-blue-900 underline;
   }
   .icon img {
-    @apply w-12 h-12; /* This ensures that all images within .icon are of the same size */
+    @apply lg: {w-12 h-12} ; /* This ensures that all images within .icon are of the same size */
   }
   /* Classes for the image in the <main> tag */
   .kai-zoom {
-    @apply absolute bottom-24 left-11 z-10 lg: (w-80);
+    @apply absolute bottom-20 left-11 z-10 lg: (w-80);
   }
 }
