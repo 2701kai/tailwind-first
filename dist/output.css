@@ -718,11 +718,12 @@ video {
 
 /* Classes for the image in the <main> tag */
 
-.kai {
+.kai-zoom {
   position: absolute;
   bottom: 6rem;
-  left: -50px;
+  left: 50px;
   z-index: 10;
+  width: 24rem;
 }
 
 /* @layer base {

@@ -16,7 +16,7 @@
 
 @layer utilities {
   .ubuntu-navbar {
-    @apply flex flex-col space-y-4 p-4;
+    @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
   }
   .link {
     @apply font-medium text-blue-900 underline;
@@ -28,7 +28,7 @@
     @apply w-12 h-12; /* This ensures that all images within .icon are of the same size */
   }
   /* Classes for the image in the <main> tag */
-  .kai {
-    @apply absolute bottom-24 left-[-50px] z-10;
+  .kai-zoom {
+    @apply absolute bottom-24 left-11 z-10 lg: (w-80);
   }
 }
