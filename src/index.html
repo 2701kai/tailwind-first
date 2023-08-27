@@ -10,11 +10,25 @@
   </head>
   <body>
     <header>
+      <!-- Hamburger button -->
+      <button id="menuToggle" class="lg:hidden p-4">
+        <img
+          src="./assets/icons/hamburger.png"
+          alt="Menu"
+          class="h-10 lg:h-auto"
+        />
+      </button>
       <div
         class="h-screen w-screen bg-[url] bg-cover bg-no-repeat bg-center flex justify-end"
         style="background-image: url(./assets/background2.webp)"
       >
-        <nav class="ubuntu-navbar">
+        <nav
+          id="menu"
+          class="ubuntu-navbar hidden lg:flex lg:bg-transparent lg:mr-0 lg:mt-0 lg:mb-0"
+        >
+          >
+          <!-- <nav class="ubuntu-navbar"> -->
+          <!-- <nav id="menu" class="ubuntu-navbar hidden lg:bg-transparent lg:flex"> -->
           <a href="#" target="_blank" rel="noopener noreferrer"
             ><i class="icon"><img src="./assets/icons/firefox.png" alt="" /></i
           ></a>
@@ -147,13 +161,14 @@
       </div>
     </header>
 
-    <main>
-      <a href="#"
-        ><img
+    <main class="flex justify-center lg:justify-start">
+      <a href="#" class="mx-2.5 lg:ml-11 lg:mr-0">
+        <img
           src="./assets/no-capisco-niente.png"
           alt="no capisco niente.."
           class="kai-zoom"
-      /></a>
+        />
+      </a>
     </main>
 
     <!-- <div
@@ -212,5 +227,6 @@
         <div class="flex"></div>
       </div>
     </footer> -->
+    <script src="./script.js"></script>
   </body>
 </html>

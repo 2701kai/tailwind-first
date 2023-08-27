@@ -18,15 +18,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+/* @layer utilities {
   .ubuntu-navbar {
     @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
   }
-  body .ubuntu-navbar .icon:hover img {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-  }
-
   .link {
     @apply font-medium text-blue-900 underline;
   }
@@ -40,17 +35,25 @@
     transition-delay: 0.1s;
   }
   .icon:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: transform 0.3s ease;
   }
   .kai-zoom {
-    @apply absolute bottom-20 left-11 z-10 lg:w-80 hover:lg:w-96;
-  }
-}
+    @apply absolute bottom-20 left-11 z-10 lg: (w-80) hover:lg:w-96;
+  } */
+/* .kai-zoom {
+    @apply mx-auto lg:mx-2.5;
+  } */
+/* } */
+
+/* Classes for the image in the <main> tag */
+/* .kai-zoom {
+  @apply absolute bottom-20 left-11 z-10 lg: (w-80) hover:lg:w-96;
+} */
 
 @layer utilities {
   .ubuntu-navbar {
-    @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
+    @apply flex flex-col space-y-4 p-4 lg:mr-0 lg:mt-0 lg:mb-0 bg-gray-100 rounded-lg shadow-lg;
   }
   .link {
     @apply font-medium text-blue-900 underline;
@@ -59,18 +62,16 @@
     @apply font-medium text-blue-900 underline;
   }
   .icon img {
-    @apply lg:w-12 lg:h-12;
+    @apply h-10 lg:w-12 lg:h-12;
   }
   .tooltip-01 {
     transition-delay: 0.1s;
   }
   .icon:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: transform 0.3s ease;
   }
-}
-
-/* Classes for the image in the <main> tag */
-.kai-zoom {
-  @apply absolute bottom-20 left-11 z-10 lg: (w-80) hover:lg:w-96;
+  .kai-zoom {
+    @apply mx-auto lg:absolute lg:bottom-20 lg:left-11 z-10 lg:w-80 hover:lg:w-96 hover:lg:transition-transform duration-300 ease-in-out;
+  }
 }
