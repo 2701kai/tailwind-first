@@ -11,12 +11,28 @@
   <body>
     <header>
       <!-- Hamburger button -->
-      <button id="menuToggle" class="lg:hidden p-4">
+      <!-- <button id="menuToggle" class="lg:hidden p-4">
         <img
           src="./assets/icons/hamburger.png"
           alt="Menu"
           class="h-10 lg:h-auto"
         />
+      </button> -->
+      <button id="menu-toggle" class="lg:hidden p-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
       </button>
       <div
         class="h-screen w-screen bg-[url] bg-cover bg-no-repeat bg-center flex justify-end"
@@ -29,7 +45,10 @@
           >
           <!-- <nav class="ubuntu-navbar"> -->
           <!-- <nav id="menu" class="ubuntu-navbar hidden lg:bg-transparent lg:flex"> -->
-          <a href="https://2701kai.github.io/multi/index.html" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://2701kai.github.io/multi/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="icon"><img src="./assets/icons/firefox.png" alt="" /></i
           ></a>
           <a href="#" target="_blank" rel="noopener noreferrer"

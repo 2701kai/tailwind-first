@@ -16,7 +16,7 @@
 
 @layer utilities {
   .ubuntu-navbar {
-    @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
+    /* @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg; */
   }
   .link {
     @apply font-medium text-blue-900 underline;
@@ -25,7 +25,7 @@
     @apply font-medium text-blue-900 underline;
   }
   .icon img {
-    @apply lg: {w-12 h-12} ; 
+    @apply lg: {w-12 h-12}; 
     .tooltip-01 {
         transition-delay: 0.1s;
     }
