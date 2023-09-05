@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
+/* 
+Correctly commented out the base and components layers
+
+@layer base {
   .link {
     @apply font-medium text-blue-900 underline;
   }
@@ -12,7 +15,8 @@
   #navbar {
     @apply font-medium text-blue-900 underline;
   }
-} */
+} 
+*/
 
 @layer utilities {
   .ubuntu-navbar {
@@ -25,15 +29,14 @@
     @apply font-medium text-blue-900 underline;
   }
   .icon img {
-    @apply lg: {w-12 h-12}; 
-    .tooltip-01 {
-        transition-delay: 0.1s;
-    }
-}
+    @apply lg:w-12 lg:h-12; /* Corrected the lg: prefix */
+  }
+  .tooltip-01 {
+    transition-delay: 0.1s;
+  }
   /* Classes for the image in the <main> tag */
   .kai-zoom {
-    @apply absolute bottom-20 left-11 z-10 lg: (w-80) hover:lg:w-96;
+    @apply absolute bottom-20 left-11 z-10;
+    @apply lg:w-80 hover:lg:w-96; /* Corrected the lg: prefix */
   }
 }
-
-

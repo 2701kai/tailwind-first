@@ -1,20 +1,6 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-/* @layer base {
-  .link {
-    @apply font-medium text-blue-900 underline;
-  }
-}
-
-@layer components {
-  #navbar {
-    @apply font-medium text-blue-900 underline;
-  }
-} */
-
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -591,8 +577,16 @@ video {
   height: 12rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-full {
@@ -722,32 +716,7 @@ video {
 }
 
 .ubuntu-navbar {
-  display: flex;
-  flex-direction: column;
-}
-
-.ubuntu-navbar > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.ubuntu-navbar {
-  border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding: 1rem;
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-@media (min-width: 1024px) {
-  .ubuntu-navbar {
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+  /* @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg; */
 }
 
 .link {
@@ -764,10 +733,6 @@ video {
   text-decoration-line: underline;
 }
 
-.icon img {
-  height: 2.5rem;
-}
-
 @media (min-width: 1024px) {
   .icon img {
     height: 3rem;
@@ -775,74 +740,52 @@ video {
   }
 }
 
+.icon img {
+  /* Corrected the lg: prefix */
+}
+
 .tooltip-01 {
   transition-delay: 0.1s;
 }
 
-.icon:hover img {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
-}
+/* Classes for the image in the <main> tag */
 
 .kai-zoom {
+  position: absolute;
+  bottom: 5rem;
+  left: 2.75rem;
   z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 1024px) {
   .kai-zoom {
-    position: absolute;
-    bottom: 5rem;
-    left: 2.75rem;
     width: 20rem;
   }
 
   .kai-zoom:hover {
     width: 24rem;
-    transition-property: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
   }
 }
 
-/* @layer utilities {
-  .ubuntu-navbar {
-    @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
-  }
+.kai-zoom {
+  /* Corrected the lg: prefix */
+}
+
+/* 
+Correctly commented out the base and components layers
+
+@layer base {
   .link {
     @apply font-medium text-blue-900 underline;
   }
-  .i {
+}
+
+@layer components {
+  #navbar {
     @apply font-medium text-blue-900 underline;
   }
-  .icon img {
-    @apply lg:w-12 lg:h-12;
-  }
-  .tooltip-01 {
-    transition-delay: 0.1s;
-  }
-  .icon:hover img {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-  }
-  .kai-zoom {
-    @apply absolute bottom-20 left-11 z-10 lg: (w-80) hover:lg:w-96;
-  } */
-
-/* .kai-zoom {
-    @apply mx-auto lg:mx-2.5;
-  } */
-
-/* } */
-
-/* Classes for the image in the <main> tag */
-
-/* .kai-zoom {
-  @apply absolute bottom-20 left-11 z-10 lg: (w-80) hover:lg:w-96;
-} */
+} 
+*/
 
 .hover\:underline:hover {
   text-decoration-line: underline;
