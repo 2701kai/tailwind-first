@@ -739,11 +739,6 @@ video {
   /* Transition effect for smooth scaling */
 }
 
-.ubuntu-navbar:hover {
-  transform: scale(1.1);
-  /* Scale the element to 110% of its original size */
-}
-
 .link {
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -763,6 +758,11 @@ video {
     height: 3rem;
     width: 3rem;
   }
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+  /* Scale the element to 110% of its original size */
 }
 
 .tooltip-01 {
