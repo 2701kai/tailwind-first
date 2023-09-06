@@ -735,6 +735,13 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: transform 0.3s ease-in-out;
+  /* Transition effect for smooth scaling */
+}
+
+.ubuntu-navbar:hover {
+  transform: scale(1.1);
+  /* Scale the element to 110% of its original size */
 }
 
 .link {
@@ -762,8 +769,6 @@ video {
   transition-delay: 0.1s;
 }
 
-/* Classes for the image in the <main> tag */
-
 .kai-zoom {
   position: absolute;
   bottom: 5rem;
@@ -780,22 +785,6 @@ video {
     width: 24rem;
   }
 }
-
-/* 
-Correctly commented out the base and components layers
-
-@layer base {
-  .link {
-    @apply font-medium text-blue-900 underline;
-  }
-}
-
-@layer components {
-  #navbar {
-    @apply font-medium text-blue-900 underline;
-  }
-} 
-*/
 
 .hover\:underline:hover {
   text-decoration-line: underline;

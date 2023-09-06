@@ -2,25 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-Correctly commented out the base and components layers
-
-@layer base {
-  .link {
-    @apply font-medium text-blue-900 underline;
-  }
-}
-
-@layer components {
-  #navbar {
-    @apply font-medium text-blue-900 underline;
-  }
-} 
-*/
-
 @layer utilities {
   .ubuntu-navbar {
     @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
+    transition: transform 0.3s ease-in-out; /* Transition effect for smooth scaling */
+  }
+  .ubuntu-navbar:hover {
+    transform: scale(1.1); /* Scale the element to 110% of its original size */
   }
   .link {
     @apply font-medium text-blue-900 underline;
@@ -34,7 +22,6 @@ Correctly commented out the base and components layers
   .tooltip-01 {
     transition-delay: 0.1s;
   }
-  /* Classes for the image in the <main> tag */
   .kai-zoom {
     @apply absolute bottom-20 left-11 z-10;
     @apply lg:w-80 hover:lg:w-96;
