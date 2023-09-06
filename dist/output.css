@@ -760,9 +760,12 @@ video {
   }
 }
 
+.icon img {
+  transition: transform 0.3s ease-in-out;
+}
+
 .icon img:hover {
   transform: scale(1.1);
-  /* Scale the element to 110% of its original size */
 }
 
 .tooltip-01 {
@@ -784,6 +787,14 @@ video {
   .kai-zoom:hover {
     width: 24rem;
   }
+}
+
+.kai-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+.kai-zoom:hover {
+  transform: scale(1.1);
 }
 
 .hover\:underline:hover {

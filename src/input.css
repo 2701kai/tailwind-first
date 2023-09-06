@@ -16,10 +16,11 @@
   }
   .icon img {
     @apply lg:w-12 lg:h-12;
+    transition: transform 0.3s ease-in-out;
   }
 
   .icon img:hover {
-    transform: scale(1.1); /* Scale the element to 110% of its original size */
+    transform: scale(1.1);
   }
   .tooltip-01 {
     transition-delay: 0.1s;
@@ -27,5 +28,10 @@
   .kai-zoom {
     @apply absolute bottom-20 left-11 z-10;
     @apply lg:w-80 hover:lg:w-96;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .kai-zoom:hover {
+    transform: scale(1.1);
   }
 }
