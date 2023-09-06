@@ -20,7 +20,7 @@ Correctly commented out the base and components layers
 
 @layer utilities {
   .ubuntu-navbar {
-    /* @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg; */
+    @apply flex flex-col space-y-4 p-4 m-3 bg-gray-100 rounded-lg shadow-lg;
   }
   .link {
     @apply font-medium text-blue-900 underline;
